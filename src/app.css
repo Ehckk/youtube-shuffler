@@ -1,0 +1,77 @@
+:root {
+	--dark-1: #1f2039;
+	--dark-2: #262746;
+	--dark-3: #303157;
+	--dark-4: #404174;
+	--light-1: #acacce;
+	--light-2: #cfd0e3;
+	--light-3: #e1e2ee;
+	--light-4: #f5f6f8;
+	--color-1: var(--dark-2);
+	--color-2: var(--dark-1);
+	--color-3: var(--dark-3);
+	--i-color-1: var(--light-2);
+	--i-color-2: var(--light-1);
+	--h-color: var(--light-3);
+	--font-color: var(--light-4);
+	--i-font-color: var(--dark-4);
+	--img-filter-1: invert(35%) sepia(9%) saturate(2974%) hue-rotate(200deg) brightness(96%) contrast(89%);
+	
+	--util-1: #6368b0;
+	--util-2: #55579b;
+	--util-3: #414374;
+	--transition: .2s ease;
+}
+
+[theme="light"] {
+	--color-1: var(--light-2);
+	--color-2: var(--light-1);
+	--color-3: var(--light-3);
+	--i-color-1: var(--dark-2);
+	--i-color-2: var(--dark-1);
+	--h-color: var(--dark-3);
+	--font-color: var(--dark-4);
+	--i-font-color: var(--light-4);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: var(--font-color);
+	box-sizing: border-box;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-style: normal;
+	font-weight: lighter;
+}
+
+h1, h2, p, strong {
+	color: var(--h-color);
+	font-weight: normal;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+    margin: 0;
+	position: relative;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-color: var(--color-3);
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+    user-select: none;    
+}
+
+body.noscroll {
+	overflow: hidden;
+	height: 100%;
+}
+
+footer {
+	height: 12rem;
+	width: 100%;;
+	position: absolute;
+}
