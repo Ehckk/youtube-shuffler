@@ -20,7 +20,7 @@
 
 <div class="controls">
 	<button class="control_button shuffle" on:click={() => dispatch('shuffle')}>
-		<div class="shuf"> </div>
+		<div class="shuf" style={`background-image: url('shuffle.png');`}> </div>
 	</button>
 	<button class="control_button previous" on:click={() => dispatch('prev')}>
 		<div class="prev">
@@ -38,7 +38,7 @@
 		</div>
 	</button>
 	<button class="control_button repeat" class:active={$loop} on:click={() => dispatch('loop')}>
-		<div class="loop"> </div>
+		<div class="loop" style={`background-image: url('loop.png');`}> </div>
 	</button>
 	<!-- Sticky position on mobile -->
 </div>
@@ -144,13 +144,13 @@
 		filter: var(--img-filter-1);
 	}
 
-	.shuf {
+	/* .shuf {
 		background-image: url('shuffle.png');
 	}
 
 	.loop {
 		background-image: url('loop.png');
-	}
+	} */
 
 	@media only screen and (max-width: 720px) {
 		.controls {
